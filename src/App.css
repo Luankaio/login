@@ -18,6 +18,7 @@
   background-color: rgb(73, 106, 148);
   border-radius: 10%;
   z-index: 1 ;
+  box-shadow: 20px 40px 70px rgb(15, 9, 27);
 
   .Login{
     position: absolute;
@@ -36,6 +37,7 @@
   border-radius: 10%;
   z-index: 1 ;
   animation: girar1 0.3s forwards;
+  box-shadow: 20px 40px 70px rgb(15, 9, 27);
   .Login{
     position: absolute;
     top: 2%;
@@ -57,6 +59,7 @@
 
 .Box2-init{
   transform: rotateY(90deg);
+  z-index: 0;
 }
 
 .Box2-final{
@@ -67,6 +70,7 @@
   border-radius: 10%;
   transform: rotateY(90deg);
   z-index: 0 ;
+  box-shadow: 20px 40px 70px rgb(15, 9, 27);
   animation: girar2 1s forwards 0.3s;
 }
 .Box:hover{
