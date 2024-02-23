@@ -1,32 +1,117 @@
-.App {
-  text-align: center;
+.Cpai {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 59, 109);
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.Box-init{
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(73, 106, 148);
+  border-radius: 10%;
+  z-index: 1 ;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Login{
+    position: absolute;
+    top: 2%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Box-final{
+  position: relative;
   display: flex;
-  flex-direction: column;
+  width: 30%;
+  height: 40%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(73, 106, 148);
+  border-radius: 10%;
+  z-index: 1 ;
+  animation: girar1 0.3s forwards;
+  .Login{
+    position: absolute;
+    top: 2%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.Caixas{
+  display: grid;
+  gap: 30px;
+  width: 60%;
+  height: 40%;
+
+  .senha{
+    opacity: 20%;
+    border: transparent;
+    box-shadow: 10px;
+  }
 }
+
+.Box2-init{
+  transform: rotateY(90deg);
+}
+
+.Box2-final{
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  background-color: rgb(73, 106, 148);
+  border-radius: 10%;
+  transform: rotateY(90deg);
+  z-index: 0 ;
+  animation: girar2 1s forwards 0.3s;
+}
+.Box:hover{
+  animation: girar1 1s linear;
+}
+
+.b1{
+  position: absolute;
+  width: 7%;
+  height: 3%;
+  bottom: 55%; 
+  left: 27%;
+}
+.b2{
+  position: absolute;
+  width: 7%;
+  height: 3%;
+  bottom: 55%;
+  left: 65%;
+}
+.Botao:hover{
+  transform: scale(1.1);
+}
+
+
+@keyframes girar1 {
+  from{
+    transform: rotatey(0deg);
+  }to{
+    transform: rotatey(90deg);
+  }
+}
+
+@keyframes girar2 {
+  from{
+    transform: rotatey(90deg);
+  }to{
+    transform: rotatey(180deg);
+  }
+}
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
