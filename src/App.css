@@ -7,50 +7,35 @@
   height: 100%;
   width: 100%;
   perspective: 1000px;
-  background-image: linear-gradient( 45deg, rgba(127, 53, 187, 0.808)18%, rgb(84, 43, 160), rgb(35, 20, 118), rgba(13, 0, 132, 0.997) );
+  background-image: linear-gradient( 45deg, rgba(144, 57, 216, 0.808)10%, rgb(92, 48, 172), rgb(35, 20, 118), rgba(11, 0, 109, 0.997) );
 }
 
 .Box{
   background-color: rgba(79, 53, 176, 0.263);
   background-image: linear-gradient(45deg, rgb(103, 9, 254));
-  
+  backface-visibility: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  width: 30%;
+  height: 40%;
+  box-shadow: 20px 40px 70px rgb(15, 9, 27);
+  .Login{
+    position: absolute;
+    top: 2%;
+  }
+ 
 }
 
 .init{
   animation-play-state: paused;
   animation: girar2 0.3s forwards linear;
-  backface-visibility: hidden;
-  position: relative;
-  display: flex;
-  width: 30%;
-  height: 40%;
-  
-  align-items: center;
-  justify-content: center;
-  border-radius: 10%;
-  z-index: 0 ;
-  box-shadow: 20px 40px 70px rgb(15, 9, 27);
-  .Login{
-    position: absolute;
-    top: 2%;
-  }
 }
+
 .final{
-  position: relative;
-  display: flex;
-  backface-visibility: hidden;
-  width: 30%;
-  height: 40%;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10%;
-  z-index: 0 ;
   animation: girar1 0.3s forwards linear;
-  box-shadow: 20px 40px 70px rgb(15, 9, 27);
-  .Login{
-    position: absolute;
-    top: 2%;
-  }
 }
 
 .init2{
@@ -141,7 +126,6 @@
 }
 .Botao:hover{
   transform: scale(1.1);
-  filter: dropShadow(30px 20px 20px  black)
 }
 
 
@@ -179,4 +163,10 @@
   }
 }
 
-
+@keyframes ap {
+  from{
+    scale: 0;
+  }to{
+    scale: 1;
+  }
+}
