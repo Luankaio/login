@@ -14,7 +14,8 @@ export const App = () => {
         <div className={virado ? 'Box init' : 'Box final'}>
           <h1 className='Login'>Criar conta</h1>
           <div className='Caixas'>
-            <input type="text" className='caixa email'/>
+            <h1 className='femail'>Email</h1>
+            <input type="email" className='caixa email'/>
             <input type="password" className='caixa senha' />
           </div>
         </div>

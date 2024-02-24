@@ -6,16 +6,18 @@
   background-color: rgb(44, 59, 109);
   height: 100%;
   width: 100%;
-  background-image: linear-gradient( 45deg, rgba(103, 38, 156, 0.57)18%, rgb(47, 17, 138), rgb(35, 20, 118), rgba(13, 0, 132, 0.997) );
+  
+  background-image: linear-gradient( 45deg, rgba(127, 53, 187, 0.808)18%, rgb(84, 43, 160), rgb(35, 20, 118), rgba(13, 0, 132, 0.997) );
 }
 .Box{
   background-color: rgba(79, 53, 176, 0.263);
   background-image: linear-gradient(45deg, rgb(103, 9, 254));
   
 }
+
 .init{
   transform: rotateX(90deg);
-  animation: girar2 0.3s linear forwards 0.3s;
+  animation: girar2 0.3s forwards linear 0.3s;
   position: relative;
   display: flex;
   width: 30%;
@@ -25,7 +27,6 @@
   border-radius: 10%;
   z-index: 0 ;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
-
   .Login{
     position: absolute;
     top: 2%;
@@ -40,10 +41,10 @@
   justify-content: center;
   border-radius: 10%;
   z-index: 0 ;
-  animation: girar1 0.3s forwards;
+  animation: girar1 0.3s forwards linear;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
   .Login{
-    position: relative;
+    position: absolute;
     top: 2%;
   }
 }
@@ -53,22 +54,30 @@
   gap: 30px;
   width: 60%;
   height: 40%;
-  
-  .email{
-
+  .femail{
+    position: absolute;
+    top: 50px;
+    scale: 0.7;
   }
-  .senha{
-
+  .email:focus{
+    scale: 1.1;
+  }
+  .senha:focus{
+    scale: 1.1;
   }
   .caixa{
     box-shadow: 10px 15px 30px rgb(15, 9, 27);
-    border-left-color: transparent;
-    border-right-color: transparent;
+    border-left-color: rgb(140, 17, 255);
+    border-right-color: rgb(73, 73, 255);
+    font-size: 20px;
+    text-indent: 5px;
     border-top: transparent;
+    border-style: ridge;
     background-color: transparent;
-    min-height: 100%;
-    min-width: 100%;
-    border-bottom-color: rgba(197, 122, 255, 0.575);
+    min-height: 90%;
+    min-width: 90%;
+    outline: none;
+    border-bottom-color: rgb(88, 4, 167);
   }
 }
 
@@ -80,7 +89,7 @@
   border-radius: 10%;
   z-index: 0 ;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
-  animation: girar1 0.3s forwards;
+  animation: girar1 0.3s forwards linear;
 }
 
 
@@ -93,7 +102,7 @@
   border-radius: 10%;
   z-index: 0 ;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
-  animation: girar2 0.3s forwards 0.3s;
+  animation: girar2 0.3s forwards 0.3s linear;
 }
 
   
@@ -123,6 +132,7 @@
 
 
 @keyframes girar1 {
+  
   from{
     transform: rotatey(0deg);
   }to{
