@@ -6,7 +6,7 @@ import {ReactComponent as Setae} from "./assets/arrow-left-wide-line.svg"
 export const App = () => {
 
   const [virado, valor] = useState(true);
-  
+
 
   return (
     <div className="Body">
@@ -20,8 +20,9 @@ export const App = () => {
           </div>
         </div>
         <div className={virado ? 'Box init2' : 'Box final2'}>
-          <h1>oidsadsa</h1>
+          <h1>usuario</h1>
         </div >  
+        
         <div className='Ai'><div className='Botao b1' onClick={() => valor(true)}><Setae/></div></div>
         <div className='Ai'><div className='Botao b2' onClick={() => valor(false)}><Setad/></div></div>
       </div>
