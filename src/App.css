@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   border-radius: 10%;
+  
   width: 30%;
   height: 40%;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
@@ -28,44 +29,31 @@
   }
  
 }
-
 .init{
   animation-play-state: paused;
   animation: girar2 0.3s forwards linear;
 }
-
 .final{
   animation: girar1 0.3s forwards linear;
 }
 
-.init2{
+.Box2{
   display: flex;
   justify-content: center;
   position: absolute;
   backface-visibility: hidden;
-  height: 40%;
   width: 30%;
-  animation-play-state: paused;
-  transform: rotateX(-180deg);
+  height: 40%;
   border-radius: 10%;
-  z-index: 0 ;
+  transform: rotateX(-180);
+  
+}
+
+.init2{
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
   animation: girar3 0.3s forwards linear;
 }
-
-
-
 .final2{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  transform: scaleX(-1);
-  backface-visibility: hidden;
-  width: 30%;
-  height: 40%;
-  transform: rotateX(-180);
-  border-radius: 10%;
-  z-index: 0 ;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
   animation: girar4 0.3s forwards linear;
 }
@@ -102,26 +90,22 @@
   }
 }
 
-
-
-  
-
-.b1{
-  position: absolute;
+.Botao{
   width: 7%;
   height: 3%;
   bottom: 55%; 
-  left: 27%;
-  
+  background-color: transparent;
+  border: transparent;
+}
+.Botao:disabled{
+  opacity: 1;
+}
+.b1{
+  position: absolute;
+  left: 27%; 
 }
 .b2{
   position: absolute;
-  display: block;
-  background: transparent;
-  border: transparent;
-  width: 7%;
-  height: 3%;
-  bottom: 55%;
   left: 65%; 
 }
 .Botao:hover{
@@ -137,8 +121,6 @@
     transform: rotatey(-180deg);
   }
 }
-
-
 @keyframes girar2 {
   from{
     transform: rotatey(-180deg);
