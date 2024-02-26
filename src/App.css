@@ -63,6 +63,7 @@
   gap: 30px;
   width: 60%;
   height: 40%;
+  z-index: 1;
   .femail{
     position: absolute;
     top: 50px;
