@@ -15,8 +15,11 @@ export const Giros = () => {
         setExecInit(false);
         setExecFinal(true);
     };
+    const vazio = () => {
 
+    };
     return {
+        vazio,
         execInit,
         execFinal,
         handleExecInit,

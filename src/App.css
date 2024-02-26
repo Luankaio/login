@@ -19,9 +19,9 @@
   display: flex;
   justify-content: center;
   border-radius: 10%;
-  
-  width: 30%;
-  height: 40%;
+  scale: (1,1);
+  width: 600px;
+  height: 400px;
   box-shadow: 20px 40px 70px rgb(15, 9, 27);
   .Login{
     position: absolute;
@@ -30,7 +30,6 @@
  
 }
 .init{
-  animation-play-state: paused;
   animation: girar2 0.3s forwards linear;
 }
 .final{
@@ -60,12 +59,12 @@
 
 .Caixas{
   display: grid;
-  gap: 30px;
+  gap: 50px;
   width: 60%;
-  height: 40%;
+  height: 50%;
   .femail{
     position: absolute;
-    top: 50px;
+    top: 90px;
     scale: 0.7;
   }
   .email:focus{
@@ -91,22 +90,20 @@
 }
 
 .Botao{
-  width: 7%;
-  height: 3%;
-  bottom: 55%; 
+  min-width: 150px;
+  min-height: 100px;
+  bottom: 43%; 
   background-color: transparent;
   border: transparent;
-}
-.Botao:disabled{
-  opacity: 1;
+  z-index: 6;
 }
 .b1{
   position: absolute;
-  left: 27%; 
+  left: 30px; 
 }
 .b2{
   position: absolute;
-  left: 65%; 
+  left: 65%;
 }
 .Botao:hover{
   transform: scale(1.1);
