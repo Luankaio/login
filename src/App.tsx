@@ -29,8 +29,12 @@ export const App = () => {
             </div>
           </div>
           {(giro.execFinal||giro.execInit) &&< div className={classNames('Box2',giro.execInit &&  'init2', giro.execFinal && 'final2')}>
-            <h1>usuario</h1>
-            
+            <h1 className='usuario'>Completar cadastro</h1>
+            <div className='Caixas2'>
+              <input placeholder=" " type="name" className='caixa2 nome'/>
+              <input placeholder=" " type="name" className='caixa2 sobrenome'/>
+              <input placeholder=" " type="name" className='caixa2 '/>
+            </div>
           </div > }
           {botao ()}
         </div>

@@ -33,9 +33,9 @@
   .Login{
     position: absolute;
     top: 2%;
-    font-family: Arial;
+    font-family: Helvetica, sans-serif;
   }
- 
+
 }
 .init{
   animation: girar2 0.3s forwards linear;
@@ -43,7 +43,9 @@
 .final{
   animation: girar1 0.3s forwards linear;
 }
-
+.usuario{
+  font-family: Helvetica, sans-serif;
+}
 .Box2{
   display: flex;
   justify-content: center;
@@ -128,7 +130,35 @@
     border-bottom-color: rgb(88, 4, 167);
   }
 }
-
+.Caixas2{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+  .caixa2{
+    position: absolute;
+    width: 390px; 
+    height: 45px;
+    left: 16%;
+    box-shadow: 10px 15px 30px rgb(15, 9, 27);
+    border-left-color: rgb(140, 17, 255);
+    border-right-color: rgb(73, 73, 255);
+    font-size: 20px;
+    text-indent: 5px;
+    border-top: transparent;
+    border-style: ridge;
+    background-color: transparent;
+    outline: none;
+    border-bottom-color: rgb(88, 4, 167);
+  }
+  .nome{
+    position: absolute;
+    transform: translateY(-90px);
+  }
+  .sobrenome{
+    position: absolute;
+  }
+}
 .Botao{
   min-width: 150px;
   min-height: 100px;
@@ -136,6 +166,8 @@
   background-color: transparent;
   border: transparent;
   z-index: 6;
+  scale: 0.9;
+  transition: 0.2s;
 }
 .b1{
   position: absolute;
@@ -146,7 +178,7 @@
   left: 100%;
 }
 .Botao:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 
