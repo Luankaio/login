@@ -1,0 +1,59 @@
+[33mcommit 06422f2aef78c88e9fe39bdda08b2dde437dcb0e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Mon Feb 26 18:49:55 2024 -0300
+
+    algumas_alteraçoes
+
+[33mcommit 9c3a5a35bf45f012bcea7e432cf432d3bc80b2fa[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Sat Feb 24 23:28:23 2024 -0300
+
+    mudando os hooks e funçoes de giros para um novo componente e trazendo como objeto.  Conserto do botao esquerdo ativando no inicio !ajeitar visibilidade do botao
+
+[33mcommit 82f17d02b26736b8be988ce802938beebcfa0d90[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Sat Feb 24 03:59:42 2024 -0300
+
+    correcao_inicio_animacao__corrigir_botao_esquerdo_inicial
+
+[33mcommit 048ceaaa6988f05cc9e1b6e2044258c651b2156e[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Sat Feb 24 00:38:40 2024 -0300
+
+    falta_ajeitar_reiniciar
+
+[33mcommit c0cb77caa758a7522c08255b5585b85dd7484746[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Fri Feb 23 23:26:55 2024 -0300
+
+    ajeitei_tudo_vou_melhorar
+
+[33mcommit 167a5d7dddaf7ea62a2b2274d180c87f9c01ae6e[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Fri Feb 23 19:59:23 2024 -0300
+
+    falta_setas
+
+[33mcommit 6174f9e894f0cf74b9569f543069e0394c542b02[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Fri Feb 23 13:41:56 2024 -0300
+
+    sombras
+
+[33mcommit f8383577c84efdbceac7ae3e355e84035fcafe67[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Fri Feb 23 13:34:00 2024 -0300
+
+    box_login_e_giro
+
+[33mcommit 02dcf52c36f0e1a302a921d0094aed8006f8deb4[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Fri Feb 23 10:19:50 2024 -0300
+
+    inicio
+
+[33mcommit 1a555936d1dd3fe41d526355174ef14a51834a77[m
+Author: Luankaio <luankaiosilveira45@hotmail.com>
+Date:   Fri Feb 23 10:12:14 2024 -0300
+
+    Initialize project using Create React App
